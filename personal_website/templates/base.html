@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
 <header class="site-header">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -12,17 +13,36 @@
             </div>
             <!-- Navbar Right Side -->
             <div class="navbar-nav">
-              <a class="nav-item nav-link" href="{% url 'project_index' %}">About</a>
+              <a class="nav-item nav-link" href="#">About</a>
               <a class="nav-item nav-link" href="{% url 'project_index' %}">Projects</a>
-              <a class="nav-item nav-link" href="{% url 'project_index' %}">Resume</a>
+              <a class="nav-item nav-link" href="#">Resume</a>
             </div>
           </div>
         </div>
       </nav>
     </header>
+
 <div class="container">
     {% block page_content %}{% endblock %}
 </div>
+
+<!-- Add LinkedIn, GitHub and Email Footer -->
+<footer class="navbar-fixed-bottom">
+  <div class="container text-center">
+    <a href="https://www.facebook.com/kai.lu.9216">
+      <i class="fab fa-facebook-square fa-5x"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/kai-lu-4017bb166/">
+        <i class="fab fa-linkedin fa-5x"></i>
+    </a>
+    <a href="https://github.com/LuK413">
+        <i class="fab fa-github-square fa-5x"></i>
+    </a>
+  </div>
+</footer>
+
+
+
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
