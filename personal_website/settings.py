@@ -25,7 +25,7 @@ SECRET_KEY = '3pne$frh)^t3d$)*&g_nav58=802w2r&kgt0r)6(=qq&w(w%0t'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['lukailu.herokuapp.comc']
 
 
 # Application definition
