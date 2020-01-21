@@ -4,7 +4,7 @@
 <header class="site-header">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-          <a class="navbar-brand mr-4" href="{% url 'project_index' %}">Kai Lu</a>
+          <a class="navbar-brand mr-4" href="{% url 'about-page' %}">Kai Lu</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           </button>
@@ -13,7 +13,7 @@
             </div>
             <!-- Navbar Right Side -->
             <div class="navbar-nav">
-              <a class="nav-item nav-link" href="#">About</a>
+              <a class="nav-item nav-link" href="{% url 'about-page' %}">About</a>
               <a class="nav-item nav-link" href="{% url 'project_index' %}">Projects</a>
               <a class="nav-item nav-link" href="#">Resume</a>
             </div>
@@ -27,7 +27,7 @@
 </div>
 
 <!-- Add LinkedIn, GitHub and Email Footer -->
-<footer class="navbar-fixed-bottom">
+<footer class="fixed-bottom">
   <div class="container text-center">
     <a href="https://www.facebook.com/kai.lu.9216">
       <i class="fab fa-facebook-square fa-5x"></i>

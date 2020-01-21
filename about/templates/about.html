@@ -1,4 +1,11 @@
 {% extends "base.html" %}
 {% load static %}
 {% block page_content %}
-<h1>About Page</h1>
+<h1>About</h1>
+{% for a in about %}
+    <div class="col-md-4">
+        <h4>{{ about.description }}</h4>
+        <img src="{% static about.image %}">
+    </div>
+{% endfor %}
+{% endblock %}
