@@ -1,4 +1,4 @@
-!<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <!-- Bootstrap Meta Tags -->
@@ -7,26 +7,37 @@
   
     <!-- Bootstrap and Font CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">  
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> 
   </head>
   
   <body>
-    <header class="site-header">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <header>
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
         <div class="container">
-          <a class="navbar-brand mr-4" href="{% url 'about-page' %}">Kai Lu</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <a class="navbar-brand mr-4" href="{% url 'about_page' %}">
+            <h1>Kai Lu</h1>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle">
+            <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarToggle">
-            <div class="navbar-nav mr-auto">
-            </div>
-            <!-- Navbar Right Side -->
-            <div class="navbar-nav">
-              <a class="nav-item nav-link" href="{% url 'about-page' %}">About</a>
-              <a class="nav-item nav-link" href="{% url 'project_index' %}">Projects</a>
-              <a class="nav-item nav-link" href="#">Resume</a>
-            </div>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'about_page' %}">
+                  <h3>About</h3>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'project_index' %}">
+                  <h3>Projects</h3>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://drive.google.com/file/d/19npEixzHjurtku7kmlQMQwOxwrDilwVJ/view?usp=sharing" target="_blank">
+                  <h3>Resume</h3>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
@@ -37,22 +48,21 @@
     </div>
   
     <!-- Add LinkedIn, GitHub and Email Footer -->
-    <footer class="fixed-bottom">
+    <footer class="bottom">
       <div class="container">
-        <div class="row">
-          <div class="col">
-            <a href="https://www.facebook.com/kai.lu.9216">
-              <i class="fab fa-facebook-square fa-5x"></i>
-            </a>
+        <div class="row text-center">
+          <div class="col-12">
+            <h2>Let's Connect</h2>
           </div>
           <div class="col">
             <a href="https://www.linkedin.com/in/kai-lu-4017bb166/">
-              <i class="fab fa-linkedin fa-5x"></i>
+              <i class="fab fa-linkedin fa-5x p-4"></i>
             </a>
-          </div>
-          <div class="col">
+            <a href="mailto:kaisiulu@gmail.com">
+              <i class="fas fa-envelope fa-5x p-4"></i>
+            </a>
             <a href="https://github.com/LuK413">
-              <i class="fab fa-github-square fa-5x"></i>
+              <i class="fab fa-github-square fa-5x p-4"></i>
             </a>
           </div>
         </div>

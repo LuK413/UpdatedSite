@@ -6,4 +6,4 @@ class Project(models.Model):
     description = models.TextField()
     technologies = models.CharField(max_length=200)
     image = models.FilePathField(
-        path='/Users/kailu/Desktop/Sides/personal_website/projects/static/img')
+        path='/Users/kailu/Desktop/projects/personal_website/projects/static/img')
