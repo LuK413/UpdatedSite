@@ -1,11 +1,20 @@
 {% extends "base.html" %}
-{% load static %}
 {% block page_content %}
-<h1>About</h1>
-{% for a in about %}
-    <div class="col-md-4">
-        <h4>{{ about.description }}</h4>
-        <img src="{% static about.image %}">
+<div class="container">
+  {% for A in about %}
+    <div class="row text-center">
+      <div class="col">
+        <h1>About Me</h1>
+      </div>
     </div>
-{% endfor %}
+    <div class="row align-items-center">
+      <div class="col">
+        <img class="img-fluid" src="{{ A.image.url }}" alt="portait">
+      </div>
+    <div class="col">
+      {{ A.description }}
+    </div>
+    </div>
+  {% endfor %}
+</div>
 {% endblock %}
