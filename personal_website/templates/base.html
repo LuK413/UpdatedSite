@@ -14,8 +14,7 @@
     <link rel="stylesheet" type="text/css" href="{% static 'main.css' %}">
   </head>
 
-  <body>
-  <!-- <body class="d-flex flex-column min-vh-100"> -->
+  <body class="d-flex flex-column min-vh-100">
     <header>
       <nav class="navbar navbar-custom navbar-expand-md">
         <div class="container">
@@ -42,14 +41,10 @@
         </div>
       </nav>
     </header>
-    
-    <!-- <img src="../static/ss-crypto-future.jpg" alt="background img"> -->
-    <div class="parallax"></div>
-    <div class="container">
-      {% block page_content %}{% endblock %}
-    </div>
   
-    <!-- <div class="wrapper flex-grow-1"></div> -->
+    {% block page_content %}{% endblock %}
+      
+    <div class="wrapper flex-grow-1"></div>
     <footer>
       <div class="container">
         <div class="row text-center">
@@ -71,7 +66,6 @@
       </div>
     </footer>
 
-  
   
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

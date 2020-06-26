@@ -1,16 +1,22 @@
 {% extends "base.html" %}
 {% block page_content %}
 {% for A in about %}
-<!-- <div class="row justify-content-center my-2 py-3">
-  <h1>About Me</h1>
-</div> -->
-<div class="row align-items-center">
-  <div class="col text-center">
-    <img class="img-fluid" id="portrait" src="{{ A.image.url }}" alt="portait">
+<div class="container">
+  <div class="row align-items-center">
+    <div class="col text-center">
+      <h1 class="parallax">Hey, I'm Kai</h1>
+    </div>
   </div>
-<div class="col">
-  {{ A.description }}
+  <div class="row align-items-center">
+    <div class="col text-center">
+      <img class="img-fluid" id="portrait" src="{{ A.image.url }}" alt="portait">
+    </div>
+    <div class="col">
+      {{ A.description }}
+    </div>
+  </div>
 </div>
-</div>
+
+
 {% endfor %}
 {% endblock %}

@@ -1,7 +1,14 @@
-body {
+html, body, .container {
     height: 100%;
+}
+
+/* h2 {
+    color: white;
+} */
+
+body {
     margin: 0;
-    background-color: #c9f7a1;
+    /* background-color: #c9f7a1; */
 }
 
 #portrait {
@@ -35,14 +42,31 @@ footer {
 }
 
 .parallax {
-    background-image: url('ss-crypto-future.jpg');
+    background-image: url("./340434.png");
     min-height: 100%;
     position: relative;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: contain;
 }
+
+.test {
+    color: white;
+    background: url("./340434.jpg") no-repeat;
+}
+
+/* .fixed-bg{
+    background-image: url("./img/jack-cain-326608-unsplash.jpg");
+    min-height: 37.5rem;
+    width: auto;
+    background-attachment: fixed;
+    background-position: bottom - 70px;
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
 
 /* @media(max-width:568px){
     .parallax {
